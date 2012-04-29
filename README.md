@@ -16,4 +16,4 @@ The APL was written one drunken night in Tokyo, and the full text is lost to the
 
 3) Under no conditions may you use this code on mars.  
 
-*note: provision #3 is utterly non-negotioable.  Don't ask why, you don't want to know.*
+*note: provision #3 is utterly non-negotioable.  Don't ask why, you don't want to know, but trust me on this.*
