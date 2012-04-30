@@ -58,7 +58,7 @@
 			children = (
 				0C147B5C154E27BC0044320F /* logo_small.png */,
 				0C147B5A154E27B70044320F /* logo.png */,
-				0C147B3D154E0BE40044320F /* Colors */,
+				0C147B3D154E0BE40044320F /* Kolorz */,
 				0C147B36154E0BE40044320F /* Frameworks */,
 				0C147B34154E0BE40044320F /* Products */,
 			);
@@ -82,7 +82,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0C147B3D154E0BE40044320F /* Colors */ = {
+		0C147B3D154E0BE40044320F /* Kolorz */ = {
 			isa = PBXGroup;
 			children = (
 				0C147B58154E210A0044320F /* intro.png */,
@@ -93,7 +93,7 @@
 				0C147B4D154E0BE40044320F /* MZViewController.m */,
 				0C147B3E154E0BE40044320F /* Supporting Files */,
 			);
-			path = Colors;
+			path = Kolorz;
 			sourceTree = "<group>";
 		};
 		0C147B3E154E0BE40044320F /* Supporting Files */ = {
@@ -123,7 +123,7 @@
 			dependencies = (
 			);
 			name = Kolorz;
-			productName = Colors;
+			productName = Kolorz;
 			productReference = 0C147B33154E0BE40044320F /* Kolorz.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -254,8 +254,8 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Colors/Kolorz-Prefix.pch";
-				INFOPLIST_FILE = "Colors/Kolorz-Info.plist";
+				GCC_PREFIX_HEADER = "Kolorz/Kolorz-Prefix.pch";
+				INFOPLIST_FILE = "Kolorz/Kolorz-Info.plist";
 				PRODUCT_NAME = Kolorz;
 				PROVISIONING_PROFILE = "72C1BBBB-EAB6-445D-B3A8-D791D73D44A2";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -269,8 +269,8 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Livonia GLAVES";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Colors/Kolorz-Prefix.pch";
-				INFOPLIST_FILE = "Colors/Kolorz-Info.plist";
+				GCC_PREFIX_HEADER = "Kolorz/Kolorz-Prefix.pch";
+				INFOPLIST_FILE = "Kolorz/Kolorz-Info.plist";
 				PRODUCT_NAME = Kolorz;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5724CDDD-7136-464C-B193-6896020A7A16";
