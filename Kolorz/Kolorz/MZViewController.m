@@ -53,26 +53,21 @@
         
         [UIView animateWithDuration:1.5f animations:^{
             nfo.alpha = 0.0f;
+            int wrong;            
+            for (wrong = [colors indexOfObject:[sender view]];wrong == [colors indexOfObject:correct]; wrong = arc4random_uniform(4)); 
+            
             for (int i = 0; i < 4; i++) {
-                if ([colors objectAtIndex:i] != correct && [colors objectAtIndex:i] != [sender view]) {
+                if (i != [colors indexOfObject:correct] && i != wrong) {
                     [[colors objectAtIndex:i] setAlpha:0.0f];
                 }
             }                    
         } completion:^(BOOL finished) {
-            [UIView animateWithDuration:1.5f animations:^{
-                int right = -1;
+            [UIView animateWithDuration:1.5f animations:^{                
                 for (int i = 0; i < 4; i++) {
                     if ([colors objectAtIndex:i] != correct) {
                         [[colors objectAtIndex:i] setAlpha:0.0f];
-                        right = i;
                     }
-                }    
-                
-                if (correct == [sender view]) {
-                    int wrong = right;
-                    for (;wrong != right; wrong = arc4random_uniform(4));                    [[colors objectAtIndex:wrong] setAlpha:1.0f];
-                           
-                }
+                }                    
                 
             } completion:^(BOOL finished) {
                 __block CGRect last;
