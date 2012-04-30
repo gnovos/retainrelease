@@ -75,16 +75,16 @@
             </objects>
             <point key="canvasLocation" x="29" y="-31"/>
         </scene>
-        <!--View Controller-->
+        <!--Info View Controller-->
         <scene sceneID="XeX-uc-Q3v">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8q-h4-Fgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Nw0-hM-AKn" sceneMemberID="viewController">
+                <viewController id="Nw0-hM-AKn" customClass="MZInfoViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="irK-ZY-pIG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You are so beautiful." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="p54-en-9bW">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="You are beautiful." textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="p54-en-9bW">
                                 <rect key="frame" x="25" y="445" width="280" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -102,6 +102,9 @@
                         <color key="backgroundColor" white="0.38857208029197082" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="9rk-R2-Ndu"/>
+                    <connections>
+                        <outlet property="sigl" destination="M5f-RC-pmo" id="xdr-Hi-ITd"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="711" y="-31"/>
@@ -110,8 +113,23 @@
     <resources>
         <image name="intro.png" width="372" height="391"/>
     </resources>
+    <classes>
+        <class className="MZInfoViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MZInfoViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sigl" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="MZViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MZViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="hex" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="nfo" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
+        <nil key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
